@@ -17,7 +17,18 @@ class Order(models.Model):
 
 
 class Item(models.Model):
+    SIZES = (
+        ('36', 36),
+        ('38', 38),
+        ('40', 40),
+        ('42', 42),
+        ('44', 44),
+        ('46', 46),
+        ('48', 48),
+    )
+
     name = models.CharField(max_length=200)
+    size = models.PositiveSmallIntegerField(choices=SIZES)
     description = models.CharField(max_length=4000)
     price = models.FloatField()
 
