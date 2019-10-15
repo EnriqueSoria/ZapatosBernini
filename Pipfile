@@ -6,6 +6,10 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+django-admin-row-actions = "*"
+pyyaml = "*"
+django-rest-framework = "*"
+coreapi = "*"
 django = "*"
 
 [requires]
